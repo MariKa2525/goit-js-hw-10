@@ -6,8 +6,5 @@ export function fetchCountries(name) {
         if (response.ok) return response.json();
         throw new Error(response.status)
     })
-    .catch(error => {
-        Notiflix.Notify.failure("Oops, there is no country with that name")
-    })
 }
     
